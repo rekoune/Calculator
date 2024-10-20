@@ -28,10 +28,11 @@ public class MyWindow {
 	public void displayWindow()
 	{
 		frame.getContentPane().setBackground(backroundColor);
-		frame.setBounds(1000, 500, 400, 583);
+		frame.setBounds(1000, 500, 400, 613);
 		frame.setLayout(null);
+		frame.setResizable(false);
 		
-		textField.setBounds(0, 0, 403, 80);
+		textField.setBounds(0, 0, 403, 110);
 		textField.setFont(new Font("Arial", Font.PLAIN, 30));
 		textField.addActionListener(this.Action);;
 		textField.setBackground(backroundColor);
@@ -39,7 +40,7 @@ public class MyWindow {
 		textField.setFocusable(false);
 		textField.setText("0");
 
-		panel.setBounds(0, 70, 400, 490);
+		panel.setBounds(0, 100, 400, 490);
 		panel.setBackground(Color.black);
 		panel.setLayout(new GridLayout(5, 4, 2 ,2));
 		button.addToPanel(panel);
